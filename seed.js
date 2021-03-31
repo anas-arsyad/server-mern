@@ -2,7 +2,7 @@ var seeder = require('mongoose-seed');
 var mongoose = require('mongoose');
 
 // Connect to MongoDB via Mongoose
-seeder.connect('mongodb://localhost:27017/db_mern_seed', {
+seeder.connect('mongodb://root:servermern@cluster0-shard-00-00.qvlp8.mongodb.net:27017,cluster0-shard-00-01.qvlp8.mongodb.net:27017,cluster0-shard-00-02.qvlp8.mongodb.net:27017/db_mern?ssl=true&replicaSet=atlas-4qnpi5-shard-0&authSource=admin&retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: true,
